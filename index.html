@@ -33,13 +33,14 @@
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
       
-      <script type="text/javascrpt">
-        $(document).ready(function() {
-          console.log("Document is now ready");
-          var imageHolder = $("#instafeed");
-          console.log($(window));
-        });
-        
+      <script type="text/javascript">
+         $(document).ready(function() {
+              console.log("Document is now ready!");
+              var imageHolder = $("#instafeed");
+              console.log($(window));
+              var myToken = window.location.hash.split("=");
+              console.log(myToken);
+         });
       </script>
 
 </body>
