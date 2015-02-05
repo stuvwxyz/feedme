@@ -47,6 +47,7 @@
                   console.log(data[i]);
                   var image = data[i].images.standard_resolution.url;
                   console.log(image);
+                  imageHolder.append('<img src="' + image + '"/>');
                   imageHolder.append(data[i]);
                 }
                 
