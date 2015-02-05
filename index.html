@@ -1,18 +1,3 @@
-Skip to content
- This repository
-Explore
-Gist
-Blog
-Help
-stuvwxyz stuvwxyz
- 
-1  Watch 
-  Star 0
- Fork 26northDacoder/feedme
- branch: gh-pages  feedme/index.html
-John RyannorthDacoder just now Update index.html
-1 contributor
-72 lines (56 sloc)  2.689 kb RawBlameHistory   
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,8 +42,10 @@ John RyannorthDacoder just now Update index.html
               
               function createHtml (data) {
                 console.log("createHtml function fired");
+                data = data.data; 
                 for (var i = 0; i < data.length; i++) {
                   console.log(data[i]);
+                  imageHolder.append(data[i]);
                 }
                 
               }
@@ -84,5 +71,3 @@ John RyannorthDacoder just now Update index.html
       </script>
 </body>
 </html>
-Status API Training Shop Blog About
-© 2015 GitHub, Inc. Terms Privacy Security Contact
