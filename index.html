@@ -47,7 +47,11 @@
                   console.log(data[i]);
                   var image = data[i].images.standard_resolution.url;
                   console.log(image);
-                  imageHolder.append('<img src="' + image + '" class="img-circle" />');
+                  imageHolder.append(
+                    '<br>' +
+                    '<h1>' + data[i].user.username + '</h1>' +  
+                    '<img src="' + image + '" class="img-circle" />'
+                  );
                   imageHolder.append(data[i]);
                 }
                 
